@@ -1,0 +1,68 @@
+@font-face {
+    font-family: '2dumbregular';
+    src: url('2Dumb-webfont.eot');
+    src: url('2Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('2Dumb-webfont.woff') format('woff'),
+         url('2Dumb-webfont.ttf') format('truetype'),
+         url('2Dumb-webfont.svg#2dumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+body{
+  font-family: "2dumbregular", sans-serif;
+}
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+table {
+  border-collapse: collapse;
+  /*padding: 10px;*/
+}
+thead {
+  background-color: rgb(29, 150, 178);
+  color: white;
+  border-right: 1px solid rgb(29, 150, 178);
+
+}
+tbody {
+  color: rgb(90, 89, 77);
+  border-bottom: 1px solid rgb(29, 150, 178);
+  border-right: 1px solid rgb(29, 150, 178);
+  border-left: 1px solid rgb(29, 150, 178);
+
+}
+tfoot{
+  vertical-align: bottom;
+}
+td, th{
+    padding: 10px;
+}
+/*td:hover{
+  background-color: yellow;
+}
+tr:hover{
+  background-color: red;
+}*/
+tr:hover ~ tr  {
+  filter: blur(5px);
+}
+tr {
+  border-bottom: 1px solid rgb(29, 150, 178);
+
+}
+tr td:first-child{
+  font-weight: bold;
+}
+p{
+  margin-top:-5px;
+  font-size: 10pt;
+}
