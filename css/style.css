@@ -52,9 +52,55 @@ td, th{
 tr:hover{
   background-color: red;
 }*/
-tr:hover ~ tr  {
+/*tr:hover ~ tr  {
   filter: blur(5px);
+}*/
+
+/*css taken from css-tricks for blur effect*/
+/*tr:last-of-type td {
+    box-shadow: inset 0 -1px 0 blue;
 }
+
+tr:last-of-type td:first-child {
+    box-shadow: inset 1px -1px 0 green;
+}
+
+tr:last-of-type td:last-child {
+    box-shadow: inset -1px -1px 0 yellow;
+}
+
+tbody:hover td {
+    color: red;
+    text-shadow: 0 0 3px black;
+}
+tbody:hover tr:hover td {
+  color: plum;
+  text-shadow: 0 1px 0 red;
+}*/
+
+/*modified blur without text shadow*/
+/*tr:last-of-type td {
+    box-shadow: inset 0 -1px 0 blue;
+}
+
+tr:last-of-type td:first-child {
+    box-shadow: inset 1px -1px 0 green;
+}
+
+tr:last-of-type td:last-child {
+    box-shadow: inset -1px -1px 0 yellow;
+}*/
+
+tbody:hover td {
+    color: black;
+    filter: blur(5px);
+}
+tbody:hover tr:hover td {
+  color: black;
+  filter: blur(0px);
+}
+
+
 tr {
   border-bottom: 1px solid rgb(29, 150, 178);
 
